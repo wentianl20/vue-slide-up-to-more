@@ -2,9 +2,14 @@
   "name": "vue-slide-up-to-more",
   "version": "0.1.0",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wentianl20/vue-slide-up-to-more"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:vue-slide-up-to-more": "vue-cli-service build --target lib --dest lib src/components/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
