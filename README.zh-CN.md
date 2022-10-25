@@ -3,7 +3,7 @@
 ---
 
 #### 基于vant的List实现的在H5下拉加载更多的弹簧橡皮筋效果，如下图
-![avatar](https://raw.githubusercontent.com/wiki/wentianl20/vue-bounce-ui/slide-checkmore.gif)
+![avatar](https://raw.githubusercontent.com/wiki/wentianl20/vue-slide-up-to-more/222_AdobeExpress.gif)
 
 ## 安装
 

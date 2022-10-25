@@ -4,7 +4,7 @@
 ---
 
 #### A H5 slide up for more items UI with bounce style based on Vant List, as shown below, 
-![avatar](https://raw.githubusercontent.com/wiki/wentianl20/vue-bounce-ui/slide-checkmore.gif)
+![avatar](https://raw.githubusercontent.com/wiki/wentianl20/vue-slide-up-to-more/222_AdobeExpress.gif)
 
 ## Install
 
