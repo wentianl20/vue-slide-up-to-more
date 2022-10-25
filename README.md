@@ -1,5 +1,5 @@
 # vue-slide-up-to-more
-### [中文说明](https://github.com/wentianl20/vue-bounce-ui/blob/master/README.zh-CN.md)
+### [中文说明](https://github.com/wentianl20/vue-slide-up-to-more/blob/master/README.zh-CN.md)
 
 ---
 
