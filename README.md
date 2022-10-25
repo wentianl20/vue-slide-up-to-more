@@ -24,7 +24,7 @@ main.js
 ```js
 import { createApp } from 'vue'
 import App from './App.vue'
-import PageList from 'vue-bounce-ui'
+import PageList from 'vue-slide-up-to-more'
 import 'vue-slide-up-to-more/lib/vue-slide-up-to-more.css'
 
 const app = createApp(App)
