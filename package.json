@@ -1,7 +1,7 @@
 {
   "name": "vue-slide-up-to-more",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "vant": "^3.6.4",
     "vue": "^3.2.13"
   },
   "devDependencies": {
@@ -23,7 +24,10 @@
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "browser": true,
+      "es2021": true,
+      "node": true,
+      "vue/setup-compiler-macros": true
     },
     "extends": [
       "plugin:vue/vue3-essential",
@@ -32,12 +36,29 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "vue/multi-word-component-names": 0,
+      "no-unused-vars": [
+        "error",
+        {
+          "varsIgnorePattern": ".*",
+          "args": "none"
+        }
+      ]
+    }
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead",
     "not ie 11"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Moible UI",
+    "Bounce UI",
+    "没有更多了",
+    "vant 3",
+    "Vue3"
   ]
 }

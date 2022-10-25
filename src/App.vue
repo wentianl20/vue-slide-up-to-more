@@ -1,17 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  PageList Component
+
+  <page-list
+      v-model:loading="loading"
+      :finished="finished"
+      finished-text="Not any more"
+      loading-text="Loading..."
+      @load="onLoad"
+  >
+    <van-cell v-for="item in list" :key="item" :title="item" />
+  </page-list>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+  import { ref } from 'vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  const list = ref([]);
+  const loading = ref(false);
+  const finished = ref(false);
+
+  const onLoad = () => {
+    loading.value = true
+    setTimeout(() => {
+      for (let i = 0; i < 10; i++) {
+        list.value.push(list.value.length + 1);
+      }
+
+      loading.value = false;
+
+      if (list.value.length >= 40) {
+        finished.value = true;
+      }
+    }, 1000);
+  };
 </script>
 
 <style>
